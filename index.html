@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple iPhone</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <meta name="robots" content="noindex,follow" />
+
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="left-column">
+      <img data-image="white" src="images/white.png" alt="">
+      <img data-image="black" src="images/black.png" alt="">
+      <img data-image="green" class="active" src="images/green.png" alt="">
+    </div>
+
+    <div class="right-column">
+      <div class="product-description">
+        <span>smartphones</span>
+        <h1>Iphone 11</h1>
+        <p>The iPhone 11 - the successor to the iPhone XR - has gone from secondary handset to firmly taking the
+          limelight. Offering most of the top-end camera technology of the powerful iPhone 11 Pro, it packs good spec
+          and manages to do so for a lower cost than many would expect - this is the one to go for if you want a good
+          value new iPhone.</p>
+      </div>
+
+
+      <div class="product-configuration">
+        <div class="product-color">
+          <span>Color</span>
+
+          <div class="color-choose">
+            <div>
+              <input data-image="white" type="radio" id="white" name="color" value="white" checked>
+              <label for="white"><span></span></label>
+            </div>
+            <div>
+              <input data-image="black" type="radio" id="black" name="color" value="black">
+              <label for="black"><span></span></label>
+            </div>
+            <div>
+              <input data-image="green" type="radio" id="green" name="color" value="green">
+              <label for="green"><span></span></label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cable-config">
+          <span>Storage</span>
+
+          <div class="cable-choose">
+            <button>64gb</button>
+            <button>128gb</button>
+            <button>256gb</button>
+          </div>
+
+          <a href="#">How to configurate your headphones</a>
+        </div>
+      </div>
+
+      <div class="product-price">
+        <span>999€</span>
+        <a href="#" onClick="javascript:buyThis()" class="cart-btn">Add to cart</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+
+<script>
+
+  function buyThis() {
+    confirm("Are you sure you want to pay 2/3 of the median european paycheck on an iphone?")
+  }
+
+</script>
+
+</html>
